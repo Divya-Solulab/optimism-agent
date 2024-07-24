@@ -22,14 +22,14 @@ SUGGESTED_TOP_UP_DEFAULT = 50_000_000_000_000_000
 SUGGESTED_SAFE_TOP_UP_DEFAULT = 500_000_000_000_000_000
 MASTER_WALLET_MIMIMUM_BALANCE = 1_000_000_000_000_000_000
 WARNING_ICON = colored('\u26A0', 'yellow')
-OPERATE_HOME = Path.cwd() / ".operate2"
+OPERATE_HOME = Path.cwd() / ".operate"
 
 TEMPLATE = ServiceTemplate(
     {
-        "name": "trader_service",
+        "name": "superfest_service",
         "hash": "bafybeicxdpkuk5z5zfbkso7v5pywf4v7chxvluyht7dtgalg6dnhl7ejoe",
         "image": "",
-        "description": "trader service",
+        "description": "superfest service",
         "configuration": ConfigurationTemplate(
             {
                 "rpc": "",
@@ -147,7 +147,7 @@ def check_rpc(rpc_url: str) -> None:
 def main() -> None:
     """Run service."""
 
-    print_title("Trader Quickstart")
+    print_title("SuperFest Agent Quickstart")
     print("This script will assist you in setting up and running the SuperFest service.")
     print()
 
